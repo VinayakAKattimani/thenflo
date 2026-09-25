@@ -1,17 +1,17 @@
-# Python virtual environment
-venv/
-.venv/
-env/
-
-# Environment variables
+# Environment
 .env
 .env.*
 !.env.example
 
-# Python cache
+# Python
 __pycache__/
 *.py[cod]
 *.pyo
+
+# Virtual environments
+venv/
+.venv/
+env/
 
 # IDE
 .vscode/
