@@ -1,0 +1,112 @@
+.sidebar {
+  width: var(--sidebar-width);
+  flex-shrink: 0;
+  height: 100%;
+  background: var(--surface);
+  border-right: 1px solid var(--border);
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-5) var(--space-3);
+}
+
+.sidebar-brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0 var(--space-3);
+  margin-bottom: var(--space-6);
+}
+
+.sidebar-brand-mark {
+  width: 10px;
+  height: 10px;
+  border-radius: 3px;
+  background: var(--accent);
+  box-shadow: 0 0 0 3px var(--accent-wash);
+}
+
+.sidebar-brand-name {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: 600;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.sidebar-link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: 9px var(--space-3);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  font-weight: 500;
+  transition: background 0.15s var(--ease), color 0.15s var(--ease);
+}
+
+.sidebar-link:hover {
+  background: var(--surface-hover);
+  color: var(--text-primary);
+}
+
+.sidebar-link.is-active {
+  background: var(--surface-elevated);
+  color: var(--text-primary);
+}
+
+.sidebar-link.is-active .icon {
+  stroke: var(--accent);
+}
+
+.sidebar-divider {
+  height: 1px;
+  background: var(--border);
+  margin: var(--space-4) var(--space-3);
+}
+
+.sidebar-user {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border-top: 1px solid var(--border);
+}
+
+.sidebar-user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: var(--radius-pill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: #1a1300;
+  flex-shrink: 0;
+}
+
+.sidebar-user-meta {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.sidebar-user-name {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.sidebar-user-role {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+}

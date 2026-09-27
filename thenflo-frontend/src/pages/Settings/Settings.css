@@ -1,0 +1,86 @@
+.settings-page {
+  max-width: 640px;
+}
+
+.settings-section {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  padding: var(--space-5);
+  margin-bottom: var(--space-4);
+}
+
+.settings-section h3 {
+  font-size: var(--text-base);
+  margin-bottom: var(--space-4);
+}
+
+.settings-fields {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.settings-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  font-size: var(--text-sm);
+}
+
+.settings-field input[type='text'] {
+  background: var(--surface-elevated);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-md);
+  padding: 8px 12px;
+  outline: none;
+  min-width: 220px;
+  text-align: right;
+}
+.settings-field input[type='text']:focus {
+  border-color: var(--accent);
+  text-align: left;
+}
+
+.settings-toggle {
+  width: 40px;
+  height: 22px;
+  border-radius: var(--radius-pill);
+  background: var(--surface-elevated);
+  border: 1px solid var(--border-strong);
+  position: relative;
+  flex-shrink: 0;
+  transition: background 0.15s var(--ease);
+}
+
+.settings-toggle-knob {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--text-tertiary);
+  transition: transform 0.15s var(--ease), background 0.15s var(--ease);
+}
+
+.settings-toggle.is-on {
+  background: var(--accent-wash);
+  border-color: var(--accent-dim);
+}
+.settings-toggle.is-on .settings-toggle-knob {
+  transform: translateX(18px);
+  background: var(--accent);
+}
+
+.settings-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.settings-saved {
+  font-size: var(--text-sm);
+  color: var(--success);
+}

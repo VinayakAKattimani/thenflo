@@ -1,0 +1,127 @@
+.task-workspace {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.task-workspace-bar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--border);
+}
+
+.task-workspace-label {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  margin-bottom: 2px;
+}
+
+.task-workspace-instruction {
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: 500;
+}
+
+.task-workspace-bar-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-shrink: 0;
+}
+
+.task-workspace-grid {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: var(--space-5);
+  padding: var(--space-5);
+}
+
+@media (max-width: 900px) {
+  .task-workspace-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.task-workspace-side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.task-workspace-activity h4,
+.task-workspace-result h4,
+.task-workspace-error h4 {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  text-transform: none;
+  margin-bottom: var(--space-2);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.task-workspace-error h4 {
+  color: var(--error);
+}
+.task-workspace-error h4 .icon {
+  width: 14px;
+  height: 14px;
+  stroke: var(--error);
+}
+
+.task-workspace-activity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.task-workspace-activity-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.task-workspace-activity-list .icon {
+  width: 14px;
+  height: 14px;
+  stroke: var(--success);
+  stroke-width: 2.5;
+  flex-shrink: 0;
+}
+
+.task-workspace-muted {
+  font-size: var(--text-sm);
+  color: var(--text-tertiary);
+}
+
+.task-workspace-result {
+  padding: var(--space-3) var(--space-4);
+  background: var(--success-wash);
+  border: 1px solid #1f5c45;
+  border-radius: var(--radius-md);
+}
+.task-workspace-result p {
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+}
+
+.task-workspace-error {
+  padding: var(--space-3) var(--space-4);
+  background: var(--error-wash);
+  border: 1px solid #6b2b2b;
+  border-radius: var(--radius-md);
+}
+.task-workspace-error p {
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+}
