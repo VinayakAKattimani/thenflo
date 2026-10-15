@@ -1,3 +1,4 @@
+
 # ThenFLo
 
 ## Enterprise Voice AI Platform
@@ -301,7 +302,7 @@ The retrieved document chunks provide additional context to the LLM so that resp
 * Retrieval-Augmented Generation (RAG)
 * Qdrant
 * Embeddings
-* Ollama / external LLM providers
+* Groq / OpenAI
 
 ### Voice
 
