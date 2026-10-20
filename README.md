@@ -11,6 +11,12 @@ The platform is designed to support both text-based and voice-based AI interacti
 
 ## Architecture
 
+<p align="center">
+<a href="https://github.com/VinayakAKattimani/thenflo">
+<img src="thenflo-flow.svg" alt="Animated Thenflo request flow" width="850" />
+</a>
+</p>
+
 ```text
                          ┌───────────────────┐
                          │      Frontend     │
